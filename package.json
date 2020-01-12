@@ -1,0 +1,60 @@
+{
+  "name": "taskplanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write \"./**/*.{js,json,scss,html}\"",
+    "mon": "nodemon -r dotenv/config ./backend/app.js",
+    "dev": "concurrently -n react,express -k \"cd frontend && npm run start\" \"npm run mon\"",
+    "start": "node -r dotenv/config ./backend/app.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "engines": {
+    "node": "^10.16.3"
+  },
+  "keywords": [
+    "JavaScript",
+    "Task"
+  ],
+  "author": "JulPat",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.13.0",
+    "prettier": "1.18.2",
+    "sass-loader": "^8.0.0",
+    "nodemon": "^1.19.3",
+    "concurrently": "^4.1.2"
+  },
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "axios": "^0.18.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "config": "^3.2.4",
+    "css-loader": "^3.2.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fawn": "^2.1.5",
+    "helmet": "^3.21.2",
+    "joi": "^14.3.1",
+    "joi-objectid": "^3.0.1",
+    "joi-password-complexity": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react-form-validator": "^1.0.2",
+    "style-loader": "^1.0.0"
+  }
+}
