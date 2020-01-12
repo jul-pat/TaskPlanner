@@ -1,0 +1,23 @@
+.modalAccount {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalAccountHeader {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+#modalAccountPassInput {
+    margin: 5%;
+    width: 100%;
+}
+
+#modalAccountPassInput > * {
+    width: 95%;
+    margin: 1%;
+    font-weight: bold;
+}

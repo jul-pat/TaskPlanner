@@ -1,0 +1,117 @@
+.profileViewDiv{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 2% 2% 2%;
+}
+
+.profileCharacterDetails {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.profileCharacterDetails > h1 {
+    width: 100%;
+}
+
+.profileViewGroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accountButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#button {
+    width: 25%;
+    height: 25%;
+}
+
+.profileCharacterStatistics {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.profileCharacterGuilds {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.statistics{
+    width: 100%;
+    bottom: 0;
+    padding: 5% 5% 0 0;
+}
+
+#statisticValue {
+    text-align: right;
+}
+
+.avatarWrap {
+    position: relative;
+    margin: 2% 2% 2% 0;
+}
+
+#avatarHover {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatarHover h1 {
+    color: white;
+    opacity: inherit;
+}
+
+.avatarDiv {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.detailsDiv {
+    width: 40%;
+    margin-top: 5%;
+}
+
+.progress {
+    width: 100%;
+}
+
+#progressDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#progressLabel {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#progressBar {
+    width: 80%;
+    display: inline-block;
+    margin: 0;
+}
+
+#progressCounter {
+    text-align: center;
+    width: 20%;
+    margin: 0;
+    display: inline-block;
+    margin-left: auto;
+}

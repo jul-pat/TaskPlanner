@@ -1,0 +1,32 @@
+.modalAvatar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalAvatarHeader {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.modalAvatarImage {
+    margin: 2%;
+    width: 30%;
+}
+
+#modalButtons {
+    margin: 2% auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60%;
+}
+
+#modalButtons Button {
+    margin: 1%;
+    font-weight: bold;
+    width: 30%;
+}
