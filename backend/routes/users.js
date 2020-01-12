@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
   const token = user.generateAuthToken();
 
   // // send email -----------------
-  const url = `http://127.0.0.1:8080/api/users/confirmation/${token}`;
+  const url = `https://taskplanner-pgjk.herokuapp.com/register/verify/${token}`;;
   sendEmail(req.body.email, url);
 
   res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
@@ -48,7 +48,7 @@ router.post('/email', async (req, res) => {
   if (error) return res.status(400).send(error.details[0].message);
 
   //send email
-  const url = `http://127.0.0.1:8080/api/users/confirmation/${req.body.token}`;
+  const url = `https://taskplanner-pgjk.herokuapp.com/register/verify/${req.body.token}`;
   sendEmail(req.body.email, url);
 
   res.send('Email sent');
@@ -68,7 +68,7 @@ router.get('/confirmation/:token', async (req, res) => {
     },
   );
 
-  res.redirect('http://localhost:3000/confirmed');
+  res.redirect('https://taskplanner-pgjk.herokuapp.com/confirmed');
 });
 
 router.get('/', async (req, res) => {
